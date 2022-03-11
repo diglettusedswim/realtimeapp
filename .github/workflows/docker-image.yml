@@ -93,7 +93,7 @@ jobs:
     - run: git clone https://${REPO_TOKEN}@github.com/diglettusedswim/realtimeapp-infra.git .
       env:
         REPO_TOKEN: ${{secrets.REPO_TOKEN}}
-    - run: kustomize edit set image diglettusedswim/flux-rt:${GITHUB_REF#refs/*/}
+    - run: kustomize edit set image gbaeke/flux-rt:${GITHUB_REF#refs/*/}
       working-directory: ./deploy/overlays/prd
     - run: git add .
     - run: |
