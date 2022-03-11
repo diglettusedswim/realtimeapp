@@ -5,7 +5,7 @@ properties:
   containers:
   - name: realtime-service
     properties:
-      image: diglettusedswim/realtime-go-cors:1.0.0
+      image: gbaeke/realtime-go-cors:1.0.0
       resources:
         requests:
           cpu: 0.1
