@@ -71,8 +71,8 @@ jobs:
       working-directory: ./deploy/overlays/dev
     - run: git add .
     - run: |
-        git config user.email "$EMAIL"
-        git config user.name "$ACTOR"
+        git config user.email "larrybobjrthe3rd@hotmail.com"
+        git config user.name "diglettusedswim"
       env:
         EMAIL: ${{secrets.EMAIL}}
         ACTOR: ${{secrets.ACTOR}}
@@ -93,8 +93,8 @@ jobs:
       working-directory: ./deploy/overlays/prd
     - run: git add .
     - run: |
-        git config user.email "$EMAIL"
-        git config user.name "$ACTOR"
+        git config user.email "larrybobjrthe3rd@hotmail.com"
+        git config user.name "diglettusedswim"
       env:
         EMAIL: ${{secrets.EMAIL}}
         ACTOR: ${{secrets.ACTOR}}
